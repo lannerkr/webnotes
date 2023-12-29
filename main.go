@@ -38,7 +38,7 @@ func main() {
 func genericErrHandler(err error, description ...string) {
 	if err != nil {
 		if description != nil {
-			fmt.Println(fmt.Sprintf("oops! something is wrong! %v\n", description[0]))
+			fmt.Printf("oops! something is wrong! %v\n", description[0])
 		}
 		panic(err)
 	}
